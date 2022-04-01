@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/pages/home.dart';
 import 'package:notes_app/screens/note_list.dart';
 
 void main() {
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
               fontSize: 14),
         ),
       ),
-      home: const NoteList(),
+      home:  HomePage(),
     );
   }
 }

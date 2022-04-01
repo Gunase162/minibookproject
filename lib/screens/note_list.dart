@@ -32,7 +32,7 @@ class NoteListState extends State<NoteList> {
 
     Widget myAppBar() {
       return AppBar(
-        title: Text('Notes', style: Theme.of(context).textTheme.headline5),
+        title: Text('สมุดบันทึก', style: Theme.of(context).textTheme.headline5),
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.white,
@@ -48,7 +48,7 @@ class NoteListState extends State<NoteList> {
                   final Note result = await showSearch(
                       context: context, delegate: NotesSearch(notes: noteList));
                   if (result != null) {
-                    navigateToDetail(result, 'Edit Note');
+                    navigateToDetail(result, 'แก้ไขข้อมูล');
                   }
                 },
               ),
@@ -79,7 +79,7 @@ class NoteListState extends State<NoteList> {
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Text('Click on the add button to add a new note!',
+                  child: Text('คลิกที่ปุ่มเพิ่มเพื่อเพิ่มบันทึกใหม่!',
                       style: Theme.of(context).textTheme.bodyText2),
                 ),
               ),
@@ -90,9 +90,9 @@ class NoteListState extends State<NoteList> {
             ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          navigateToDetail(Note('', '', 3, 0), 'Add Note');
+          navigateToDetail(Note('', '', 3, 0), 'เพิ่มข้อมูล');
         },
-        tooltip: 'Add Note',
+        tooltip: 'เพิ่มข้อมูล',
         shape: const CircleBorder(
             side: BorderSide(color: Colors.black, width: 2.0)),
         child: const Icon(Icons.add, color: Colors.black),
@@ -108,7 +108,7 @@ class NoteListState extends State<NoteList> {
       itemCount: count,
       itemBuilder: (BuildContext context, int index) => GestureDetector(
         onTap: () {
-          navigateToDetail(noteList[index], 'Edit Note');
+          navigateToDetail(noteList[index], 'แก้ไขข้อมูล');
         },
         child: Padding(
           padding: const EdgeInsets.all(8.0),

@@ -70,7 +70,7 @@ class NotesSearch extends SearchDelegate<Note> {
               ),
             ),
             Text(
-              'Enter a note to search.',
+              'กรุณาป้อนข้อมูลเพื่อค้นหา',
               style: TextStyle(color: Colors.black),
             )
           ],
@@ -97,7 +97,7 @@ class NotesSearch extends SearchDelegate<Note> {
                 ),
               ),
               Text(
-                'No results found',
+                'ไม่พบผลลัพธ์ที่ต้องการ',
                 style: TextStyle(color: Colors.black),
               )
             ],
@@ -166,7 +166,7 @@ class NotesSearch extends SearchDelegate<Note> {
               ),
             ),
             Text(
-              'Enter a note to search.',
+              'กรุณาป้อนข้อมูลเพื่อค้นหา',
               style: TextStyle(color: Colors.black),
             )
           ],
@@ -193,7 +193,7 @@ class NotesSearch extends SearchDelegate<Note> {
                 ),
               ),
               Text(
-                'No results found',
+                'ไม่พบผลลัพธ์ที่ต้องการ',
                 style: TextStyle(color: Colors.black),
               )
             ],

@@ -105,7 +105,7 @@ class NoteDetailState extends State<NoteDetail> {
                       updateTitle();
                     },
                     decoration: const InputDecoration.collapsed(
-                      hintText: 'Title',
+                      hintText: 'ชื่อเรื่อง',
                     ),
                   ),
                 ),
@@ -122,7 +122,7 @@ class NoteDetailState extends State<NoteDetail> {
                         updateDescription();
                       },
                       decoration: const InputDecoration.collapsed(
-                        hintText: 'Description',
+                        hintText: 'คำอธิบาย',
                       ),
                     ),
                   ),
@@ -141,10 +141,10 @@ class NoteDetailState extends State<NoteDetail> {
           shape: const RoundedRectangleBorder(
               borderRadius:  BorderRadius.all(Radius.circular(10.0))),
           title: Text(
-            "Discard Changes?",
+            "ยกเลิกการเปลี่ยนแปลง?",
             style: Theme.of(context).textTheme.bodyText2,
           ),
-          content: Text("Are you sure you want to discard changes?",
+          content: Text("คุณแน่ใจหรือไม่ ว่าต้องการยกเลิกการเปลี่ยนแปลง?",
               style: Theme.of(context).textTheme.bodyText1),
           actions: <Widget>[
             TextButton(
@@ -182,10 +182,10 @@ class NoteDetailState extends State<NoteDetail> {
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(10.0))),
           title: Text(
-            "Title is empty!",
+            "ชื่อเรื่องว่างเปล่า!",
             style: Theme.of(context).textTheme.bodyText2,
           ),
-          content: Text('The title of the note cannot be empty.',
+          content: Text('ชื่อเรื่องต้องไม่เว้นว่าง',
               style: Theme.of(context).textTheme.bodyText1),
           actions: <Widget>[
             TextButton(
@@ -212,10 +212,10 @@ class NoteDetailState extends State<NoteDetail> {
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all( Radius.circular(10.0))),
           title: Text(
-            "Delete Note?",
+            "ลบบันทึก?",
             style: Theme.of(context).textTheme.bodyText2,
           ),
-          content: Text("Are you sure you want to delete this note?",
+          content: Text("คุณแน่ใจหรือว่าต้องการลบบันทึกนี้?",
               style: Theme.of(context).textTheme.bodyText1),
           actions: <Widget>[
             TextButton(
